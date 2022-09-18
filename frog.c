@@ -5,9 +5,10 @@
 int main()
 {
 	srand(time(NULL));
-	int step = 31,
+	int step = 4,
 		times,
-		count = 0;
+		count = 0,
+		result[] = {0, 0};
 	scanf("%d", &times);
 
 	for (size_t i = 0; i < times; i++)
@@ -32,7 +33,7 @@ int main()
 			}
 		}
 
-		if (coord[0] == -4 && coord[1] == 5)
+		if (coord[0] == result[0] && coord[1] == result[1])
 			count++;
 	}
 
